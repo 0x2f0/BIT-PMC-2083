@@ -1,7 +1,7 @@
-#let frontPage() = {
+#let frontPage(title, subject, course_no, batch, semester, submitted_to,  name, roll_no) = {
   align(center)[
   // University logo
-  #image("../../assets/campus-logo.png", width: 0.75in)
+  #image("/assets/campus-logo.png", width: 0.75in)
 
   #v(0.05in)
 
@@ -22,7 +22,7 @@
   #v(0.65in)
 
   // Practical file
-  #text(size: 25pt)[#strong[title]]
+  #text(size: 25pt)[#strong[#title]]
 ]
 
 v(0.65in)
@@ -34,16 +34,16 @@ grid(
   column-gutter: 0.05in,
 
   [Subject],
-  [: Introduction to Information Technology],
+  [: #subject],
 
   [Course No],
-  [: BIT101],
+  [: #course_no],
 
   [Batch],
-  [: 2083],
+  [: #batch],
 
   [Semester],
-  [: 1#super[st]],
+  [: #semester],
 )
 
 v(0.95in)
@@ -55,14 +55,13 @@ grid(
 
   [
     Submitted To: \
-    Deo N. Yadav \
-    (Associate Professor)
+    #submitted_to
   ],
 
   [
     Submitted by: \
-    Name: \
-    Roll No:
+    Name: #name\
+    Roll No: #roll_no
   ],
 )
 

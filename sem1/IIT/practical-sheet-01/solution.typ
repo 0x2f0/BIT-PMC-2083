@@ -1,4 +1,4 @@
-import "../../../res/modules/first-page.typ" : frontPage
+#import "/res/modules/front-page.typ": frontPage
 
 #set page(
   paper: "a4",
@@ -15,4 +15,13 @@ import "../../../res/modules/first-page.typ" : frontPage
   size: 12pt,
 )
 
-#frontPage()
+#frontPage(
+  "Practical file", 
+  "Introduction to Information Technology", 
+  "BIT101", 
+  "2083", 
+  [1#super[st]], 
+  [Deo N. Yadav \ (Associate Professor)],
+  "Saroj Regmi",
+  "06"
+)
