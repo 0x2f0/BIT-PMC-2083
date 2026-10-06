@@ -165,15 +165,15 @@ In software or generally, a wildcard character is a special single character tha
 There are two wildcard characters in DOS.\
 
 They are:
-1. asterik (\*)
+1. asterisk (\*)
 2. question mark (?)
 
 #v(20pt)
-1. *asterik (\*)*\
-asterik is a wildcard character that serves as a placeholder for any number of characters and matches every single character.
+1. *asterisk (\*)*\
+asterisk is a wildcard character that serves as a placeholder for any number of characters and matches every single character.
 #example(
-  img: "./images/asterik.png",
-  caption: [An example of using *asterik* wildcard.]
+  img: "./images/asterisk.png",
+  caption: [An example of using *asterisk* wildcard.]
 )
 
 #v(20pt)
