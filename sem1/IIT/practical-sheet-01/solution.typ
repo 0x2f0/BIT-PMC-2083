@@ -177,7 +177,7 @@ asterisk is a wildcard character that serves as a placeholder for any number of 
 )
 
 #v(20pt)
-2. *question mark (\*)*\
+2. *question mark (?)*\
 question mark is a wildcard character that serves as a placeholder for only one character and matches only one character 
 #example(
   img: "images/question_mark.png",
@@ -333,7 +333,7 @@ erase [/p] [/f] [/s] [/q] [/a[:]<attributes>] <names>")
 *attrib* command can be used to display, set, or remove attributes assigned to files or directories. If used without parameters, attrib displays attributes of all files in the current directory.
 #syntax(text: "attrib [{+|-}r] [{+|-}a] [{+|-}s] [{+|-}h] [{+|-}o] [{+|-}i] [{+|-}x] [{+|-}p] [{+|-}u] [{+|-}b] [<drive>:][<path>][<filename>] [/s [/d] [/l]]")
 #example(
-  img: "images/before_cls.png",
+  img: "./images/attrib.png",
   width:50%,
   caption: [An example of using *attrib* command.]
 )
