@@ -74,3 +74,45 @@ Some Basic commands:
    An example of time command.
   ],
 )
+
+#pagebreak()
+3. #strong("date",)
+`date` command is used to display or set the system date. If used without parameters, it displays the current system date and prompts you to enter a new date.
+It is very similar to the `time` command above.
+
+#figure(
+  image("images/date.png", width: 80%),
+  caption: [
+   An example of date command.
+  ],
+)
+
+#v(30pt)
+#line(length: 100%, stroke: 1pt + color.rgb("#e8e8e8"))
+#v(20pt)
+
+4. #strong("prompt",)
+`prompt` command is used to set the current prompt syntax, which will get expanded when the user is using the cmd.
+The line of text that is present before the user types the command in cmd is called prompt. It is generally in the format of 
+`$p$g` which expands to current directory and a greater than symbol ">". as shown in the figure below.
+This prompt can be changed into anything you like be it current directory and `=` symbol to only your name.
+we can explore the available prompt options using the command `prompt /?`
+
+#figure(
+  image("images/prompt.png", width: 80%),
+  caption: [
+   An example of setting prompt very minimal popular unix prompt `$> `. 
+  ],
+)
+
+#pagebreak()
+
+5. #strong("help",)
+`help` command displays a list of the available commands or detailed help information on a specified command. If used without parameters, help lists and briefly describes every system command.
+
+#figure(
+  image("images/help.png", width: 80%),
+  caption: [
+   An example of using `help` command to see help info about `prompt` command.
+  ],
+)
