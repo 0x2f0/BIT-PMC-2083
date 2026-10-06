@@ -172,7 +172,7 @@ They are:
 1. *asterik (\*)*\
 asterik is a wildcard character that serves as a placeholder for any number of characters and matches every single character.
 #example(
-  img: "images/prompt.png",
+  img: "./images/asterik.png",
   caption: [An example of using *asterik* wildcard.]
 )
 
@@ -180,7 +180,7 @@ asterik is a wildcard character that serves as a placeholder for any number of c
 2. *question mark (\*)*\
 question mark is a wildcard character that serves as a placeholder for only one character and matches only one character 
 #example(
-  img: "images/prompt.png",
+  img: "images/question_mark.png",
   caption: [An example of using *question mark* wildcard.]
 )
 
@@ -192,7 +192,7 @@ question mark is a wildcard character that serves as a placeholder for only one 
 *dir* command is used to list the files and directory of the current location or path.
 #syntax(text: "dir")
 #example(
-  img: "images/before_cls.png",
+  img: "images/dir.png",
   caption: [An example of using *dir* command.]
 )
 
@@ -204,13 +204,14 @@ question mark is a wildcard character that serves as a placeholder for only one 
 md [<drive>:]<path>
 ")
 #example(
-  img: "images/before_cls.png",
-  caption: [An example of using *md* and *mkdir* command.]
+  img: "images/md_mkdir.png",
+  caption: [An example of using *md* and *mkdir* command.],
+  width: 50%,
 )
 
 #pagebreak()
 
-4.3 *cd* or chdir\
+4.3 *cd* or *chdir*\
 *cd* or *chdir* command is used change the current directory.
 #syntax(text: "cd [/d] [<drive>:][<path>]
 cd [..]
@@ -218,7 +219,7 @@ chdir [/d] [<drive>:][<path>]
 chdir [..]
 ")
 #example(
-  img: "images/before_cls.png",
+  img: "./images/chdir_cd.png",
   caption: [An example of using *chdir* and *cd* command.]
 )
 
@@ -228,17 +229,17 @@ chdir [..]
 *ren* command is used to rename file and directory in cmd. 
 #syntax(text: "ren [<drive>:][<path>]<filename1> <filename2>")
 #example(
-  img: "images/before_cls.png",
+  img: "./images/ren.png",
   caption: [An example of using *ren* command.]
 )
 
 #pagebreak()
 
-4.5 tree\
+4.5 *tree*\
 *tree* command is used to display the directory structure of a path or of the disk in a drive graphically. 
 #syntax(text: "tree [<drive>:][<path>] [/f] [/a]")
 #example(
-  img: "images/before_cls.png",
+  img: "./images/tree.png",
   caption: [An example of using *tree* command.]
 )
 
@@ -248,7 +249,7 @@ chdir [..]
 *rd* or *rmdir* command is used to delete folder, if proper flags are specified it can also delete all the files and folder contained inside the specified folder.
 #syntax(text: "rd [<drive>:]<path> [/s [/q]]")
 #example(
-  img: "images/before_cls.png",
+  img: "./images/rd_rmdir.png",
   caption: [An example of using *rd* and *rmdir* command.]
 )
 #pagebreak()
@@ -260,16 +261,16 @@ chdir [..]
 *edit* command is used to start the MS-DOS Editor, which creates and changes ASCII text files.
 #syntax(text: "edit [/b] [/h] [/r] [/s] [/<nnn>] [[<drive>:][<path>]<filename> [<filename2> [...]]")
 #example(
-  img: "images/before_cls.png",
+  img: "./images/edit.png",
   caption: [An example of using *edit* command.]
 )
 
 #divider(show_line: true)
 
-5.2 notepad\
+5.2 *notepad*\
 *notepad* command or application can also be opened directly through cli interface of cmd.exe where we can create do different file operations. 
 #example(
-  img: "images/before_cls.png",
+  img: "./images/notepad.png",
   caption: [An example of using *opening notepad* using cli.]
 )
 
@@ -279,7 +280,7 @@ chdir [..]
 *copy* command can be used to Copy one or more files from one location to another
 #syntax(text: "copy [/d] [/v] [/n] [/y | /-y] [/z] [/a | /b] <source> [/a | /b] [+<source> [/a | /b] [+ ...]] [<destination> [/a | /b]]")
 #example(
-  img: "images/before_cls.png",
+  img: "./images/copy.png",
   caption: [An example of using *copy* command.]
 )
 
@@ -290,7 +291,7 @@ chdir [..]
 #syntax(text: "del [/p] [/f] [/s] [/q] [/a[:]<attributes>] <names>
 erase [/p] [/f] [/s] [/q] [/a[:]<attributes>] <names>")
 #example(
-  img: "images/before_cls.png",
+  img: "./images/del_erase.png",
   caption: [An example of using *del* and *erase* command.]
 )
 #pagebreak()
@@ -299,119 +300,103 @@ erase [/p] [/f] [/s] [/q] [/a[:]<attributes>] <names>")
 *doskey* command calls Doskey.exe, which recalls previously entered command-line commands, edits command lines, and creates macros. 
 #syntax(text: "doskey [/reinstall] [/listsize=<size>] [/macros:[all | <exename>] [/history] [/insert | /overstrike] [/exename=<exename>] [/macrofile=<filename>] [<macroname>=[<text>]]")
 #example(
-  img: "images/before_cls.png",
+  img: "./images/doskey_history.png",
   caption: [An example of using *doskey* command.]
 )
 
 #divider(show_line: true)
 
-5.6 *rename* or *ren*\
-*rename* or *ren* command can be used to rename one or more files or directories. We can also use wildcard characters (\* and ?) to rename multiple files in a single command.
-#syntax(text: "rename [<drive>:][<path>]<filename1> <filename2>
-ren [<drive>:][<path>]<filename1> <filename2>")
-#example(
-  img: "images/before_cls.png",
-  caption: [An example of using *ren* and *rename* command.]
-)
-#pagebreak()
-
 5.7 *type*\
 *type* command can be used to display the contents of a text file. We can use the type command to view a text file without modifying it.  
 #syntax(text: "type [<drive>:][<path>]<filename>")
 #example(
-  img: "images/before_cls.png",
+  img: "./images/type.png",
   caption: [An example of using *type* command.]
 )
-
-#divider(show_line: true)
+#pagebreak()
 
 5.8 *print*\
 *print* command can be used to send a text file to a printer. A file can print in the background if you send it to a printer connected to a serial or parallel port on the local computer
 #syntax(text: "print [/d:<printername>] [<drive>:][<path>]<filename>[ ...]")
-#example(
-  img: "images/before_cls.png",
-  caption: [An example of using *print* command.]
-)
-#pagebreak()
 
 5.9 *copy con*\
 *copy con* command is used to create, write, or overwrite text and batch files directly from the Command Prompt 
 #syntax(text: "copy con [<filename>]")
 #example(
-  img: "images/before_cls.png",
+  img: "./images/copy_con.png",
+  width: 50%,
   caption: [An example of using *copy con* command.]
 )
 
 #divider(show_line: true)
-
 5.10 *attrib*\
 *attrib* command can be used to display, set, or remove attributes assigned to files or directories. If used without parameters, attrib displays attributes of all files in the current directory.
 #syntax(text: "attrib [{+|-}r] [{+|-}a] [{+|-}s] [{+|-}h] [{+|-}o] [{+|-}i] [{+|-}x] [{+|-}p] [{+|-}u] [{+|-}b] [<drive>:][<path>][<filename>] [/s [/d] [/l]]")
 #example(
   img: "images/before_cls.png",
+  width:50%,
   caption: [An example of using *attrib* command.]
 )
 #pagebreak()
 
-5.10 *fc*\
+5.11 *fc*\
 *fc* command can be used to compare two files or sets of files and display the differences between them.
 #syntax(text: "fc /a [/c] [/l] [/lb<n>] [/n] [/off[line]] [/t] [/u] [/w] [/<nnnn>] [<drive1>:][<path1>]<filename1> [<drive2>:][<path2>]<filename2>
 fc /b [<drive1:>][<path1>]<filename1> [<drive2:>][<path2>]<filename2>")
 #example(
-  img: "images/before_cls.png",
+  img: "./images/fc.png",
   caption: [An example of using *fc* command.]
 )
 #pagebreak()
 
 
-5. *Use of Redirection, Filters, Pipes*
+6. *Use of Redirection, Filters, Pipes*
 #v(20pt)
 
-5.1 *Redirection input and output*\
+6.1 *Redirection input and output*\
 #v(10pt)
-5.1.1 *output redireciton (>)*\
+6.1.1 *output redireciton (>)*\
 The greater than operator is used to redirect the output of stdout into a file instead of displaying it into the screen.
 #syntax(text: "dir > file.txt", header: "example")
 in the above example the all the files and folder's name inside the current directory will be added inside the file called file.txt.
 
 #v(10pt)
-5.1.2 *output redireciton append (>>)*\
+6.1.2 *output redireciton append (>>)*\
 The double greater than operator is used to redirect the output of stdout into a file instead of displaying it into the screen. But instead of replacing the items of the specified file it appends additional contents to it.
 #syntax(text: "\"some more text\" >> file.txt", header: "example")
 in the above example the some more text will be appended to the file.txt where previously all the files and folder's name of the current directory were present. 
 
 #v(10pt)
-5.1.2 *input redireciton (<)*\
+6.1.2 *input redireciton (<)*\
 The smaller than operator is used to input a file or stdin as input to a program. 
 #syntax(text: "sort < names.txt", header: "example")
 here in the example above, the contents of the file name.txt are passes as the input to the sort command using input redirection.
 
-#pagebreak()
-
 #v(20pt)
-5.2 *Use of Filters and Pipes*\
+6.2 *Use of Filters and Pipes*\
 #v(10pt)
-5.2.1 *Pipe ( | )*\
+6.2.1 *Pipe ( | )*\
 The pipe operator ( | ) is used to provide the output of one command as input to another command.
-#syntax(text: "dir | find \".png\"", header: "example")
-here in the example above, the output of dir command is passed as the input to the find command. 
+#syntax(text: "dir | sort", header: "example")
+here in the example above, the output of dir command is passed as the input to the sort command. 
 
 #v(10pt)
-5.2.2 *Filters commands*\
+6.2.2 *Filters commands*\
 
 #v(10pt)
-5.2.2.1 *more*\
+6.2.2.1 *more*\
 *more* command is used to limit the output of a program one screen at a time. It is specifically useful when the output of certain commands is more than a screen and is hard to fit in a single screen.
 #syntax(text: "<command> | more [/c] [/p] [/s] [/t<n>] [+<n>]
 more [[/c] [/p] [/s] [/t<n>] [+<n>]] < [<drive>:][<path>]<filename>
 more [/c] [/p] [/s] [/t<n>] [+<n>] [<files>]")
 
-#example(img: "images/after_cls.png", caption: "Using more filter command")
+#example(img: "./images/more.png", caption: "Using more filter command")
+#divider(show_line: true)
 
 
 #v(10pt)
-5.2.2.2 *sort*\
+6.2.2.2 *sort*\
 *sort* can be used to read input, sort data, and write the results to the screen or to a file using redirect operationrs like (>, >>).
 #syntax(text: "sort [/r] [/+<N>] [/m <kilobytes>] [/l <locale>] [/rec <characters>] [[<drive1>:][<path1>]<filename1>] [/t [<drive2>:][<path2>]] [/o [<drive3>:][<path3>]<filename3>]")
 
-#example(img: "images/after_cls.png", caption: "Using sort command")
+#example(img: "./images/sort.png", caption: "Using sort command")
