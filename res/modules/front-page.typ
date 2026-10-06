@@ -25,7 +25,7 @@
   #text(size: 25pt)[#strong[#title]]
 ]
 
-v(0.65in)
+v(1in)
 
 // Course information
 grid(
@@ -46,12 +46,12 @@ grid(
   [: #semester],
 )
 
-v(0.95in)
+v(3in)
 
 // Submission information
 grid(
   columns: (1fr, 1fr),
-  column-gutter: 1in,
+  column-gutter: 1fr,
 
   [
     Submitted To: \
